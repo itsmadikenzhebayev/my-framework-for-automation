@@ -2,18 +2,18 @@ describe('admin', function(){
     it('addition test', function(){
     
 
-        browser.get('http://172.26.10.50/login');
+        browser.get('');
         //browser.driver.manage().window().maximize();
 
-        var input_login = element(by.css('input[type="email"]')).sendKeys("super@test.kz");
-        var input_password = element(by.css('input[type="password"]')).sendKeys("super");
+        var input_login = element(by.css('input[type="email"]')).sendKeys("");
+        var input_password = element(by.css('input[type="password"]')).sendKeys("");
         var submit_button = element(by.css('button[type="submit"]')).click();
         
         const click_admin_section = element(by.css('a[ng-reflect-router-link="pos-admin"]')).click();
         //Adding Mines
         const click_mines_section = element(by.css('a[ng-reflect-router-link="/pos-admin,mines"]')).click();
         var createMine_buttonelement = element(by.css('button[class="btn btn-primary"]')).click();
-       var enter_mineName =  element(by.css('input[ng-reflect-name="mine"]')).sendKeys("Autotest");
+       var enter_mineName =  element(by.css('input[ng-reflect-name="mine"]')).sendKeys("");
        var enterLatitude =  element(by.css('input[name="latitude"]')).sendKeys("63,81238");
         var enterLongtitude = element(by.css('input[name="longtitude"]')).sendKeys("67,54345");
         var enter_minZoom = element(by.css('input[name="minZoom"]')).sendKeys("17");
@@ -35,7 +35,7 @@ describe('admin', function(){
    
       /* const click_maps_section =  element(by.css('a[ng-reflect-router-link="/pos-admin,maps"]')).click();
        var addMap_button = element(by.buttonText('+ Add')).click();
-       element(by.css('input[id="url"]')).sendKeys("http://172.26.10.49:8080/geoserver/test1210/wms");
+       element(by.css('input[id="url"]')).sendKeys("");
        element(by.css('textarea[id="params"]')).sendKeys("Autotest");
        element(by.tagName("ng-select2#layer")).click();
        element(by.css('input[class="select2-search__field"]')).sendKeys("Горизонт 1");
