@@ -3,11 +3,11 @@ const LevelSettings = require('../tests/LevelSettings');
 describe('Testing level creation', function(){
     it('level', function(){
 
-        LevelSettings.get('http://172.26.10.50/login');
+        LevelSettings.get('');
 
-        LevelSettings.enterLogin("super@test.kz");
+        LevelSettings.enterLogin("");
 
-        LevelSettings.enterPassword("super");
+        LevelSettings.enterPassword("");
 
         LevelSettings.clickSubmit();
 
@@ -17,11 +17,11 @@ describe('Testing level creation', function(){
 
         LevelSettings.createLevel();
 
-        LevelSettings.enterLevel("Autotest");
+        LevelSettings.enterLevel("");
 
         LevelSettings.mineList();
 
-        LevelSettings.mineConfirm("Шахта 1");
+        LevelSettings.mineConfirm("");
 
         browser.actions().sendKeys(protractor.Key.ENTER).perform();
 
