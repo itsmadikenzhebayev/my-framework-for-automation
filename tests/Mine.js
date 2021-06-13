@@ -3,11 +3,11 @@ const MineSettings = require('../tests/MineSettings');
 describe('Testing mine creation', function(){
     it('mine', function(){
 
-        MineSettings.get('http://172.26.10.50/login');
+        MineSettings.get('');
 
-        MineSettings.enterLogin("super@test.kz");
+        MineSettings.enterLogin("");
 
-        MineSettings.enterPassword("super");
+        MineSettings.enterPassword("");
 
         MineSettings.clickSubmit();
 
@@ -17,15 +17,15 @@ describe('Testing mine creation', function(){
 
         MineSettings.createMine();
 
-        MineSettings.mineName("Autotest");
+        MineSettings.mineName("");
 
-        MineSettings.latitudeValue("67");
+        MineSettings.latitudeValue("47");
 
-        MineSettings.longtitudeValue("67");
+        MineSettings.longtitudeValue("-107");
 
-        MineSettings.minZoom("3");
+        MineSettings.minZoom("12");
 
-        MineSettings.maxZoom("3");
+        MineSettings.maxZoom("20");
 
         MineSettings.addMine();
     });
